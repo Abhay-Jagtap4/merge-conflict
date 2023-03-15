@@ -1,15 +1,21 @@
-pseudo code
+#include <stdio.h>
+
+int Initial_Function()
 {
-Initial Function()
-{
-  //Sample Code
+  return 0;
 }
 
-Initial Security()
+int Initial_Security()
 {
- //Sample Code
+  	if(Initial_Function() == 0)
+  		return 0;
+	else
+		return 1;
 }
 
+int main() {
+  if(Initial_Security() == 0)
+  printf("Security Breach.");
 
-
+  return 0;
 }
